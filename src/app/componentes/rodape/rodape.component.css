@@ -1,0 +1,55 @@
+footer {
+  background-image: url(/assets/imagens/fundo-rodape.png);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "TextoCopyright LogoRodape .";
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.TextoCopyright {
+  justify-self: center;
+  grid-area: TextoCopyright;
+  text-transform: capitalize;
+  color: white;
+}
+
+.LogoRodape {
+  justify-self: center;
+  grid-area: LogoRodape;
+  color: #6BD1FF;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.Socials {
+  justify-self: center;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.imagens_socials {
+  width: 30px;
+}
+
+@media (max-width: 576px) {
+  .cabecalho .logo {
+    padding: 2rem;
+  }
+
+  .cabecalho p {
+    font-size: 1.5rem
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+}
